@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container m-5">    
+       
+            <div class="row">
+                <div class="col-12 col-lg-4 col-md-4   p-0 overflow-hidden border1">   
+                    <div class="form-group  d-flex flex-column gap-4 "> 
+                        <p class="text-center tittle1">Ajouter une tache</p> 
+                        <form action="" class="p-3 m-2 d-flex flex-column gap-4">
+                            <select name="" id="select1" class="form-control p form-select">
+                                <option disabled selected value="">Categorie</option>
+                                <option value="Academique">Academique</option>
+                                <option value="Extra-academique">Extra-academique</option>
+                                <option value="Distraction">Distraction</option>
+                            </select> 
+                            <input type="text" id="title" class="form-control" placeholder="Titre" >                 
+                            <input id="date1" type="date"  class="form-control">
+                            <textarea id="description" class="form-control" placeholder="Description"></textarea>
+                            
+                            <select name="" id="select2" class="form-control mb-2 form-select">
+                                <option disabled selected value="">Status</option>
+                                <option value="Nouveau">Nouveau</option>
+                                <option value="Cour">Cour</option> 
+                                <option value="Terminer">Terminer</option>                       
+                            </select>  
+                        </form>
+                        
+                        <button class="btn" id="submit" onclick = "addData()">Add Data</button>
+                        <button class="btn" id="update" onclick = "addData()">Updata</button>
+
+                        <div class="chat">
+                        </div>
+                        <div class="chat-js">
+                            <p class="tittle3">Status</p>
+                            <canvas id="myChart" style="width: 400px;"></canvas>
+                           
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="col-12 col-lg-8 col-md-8 ">
+                    
+                    <p class="text-center tittle2">Ajouter une tache</p> 
+                    <table class="table table-striped table-success table-responsive">
+                        <thead>
+                            <tr class="table-success">
+                                <th>#</th>
+                                <th>Date</th>
+                                <th>Titre</th>
+                                <th>Categorie</th>
+                                <th>Operations</th>
+                            </tr>
+                            <tbody>
+
+                            </tbody>
+                        </thead>
+                    </table>
+                    <hr>
+                    <p class="tittle2 text-center" >Description</p>
+                    <div class="description"></div>
+                    
+                </div>
+
+               
+            </div>
+
+            <div class="alert-contenainer">
+                <div class="alert">
+                    <p class="alertText1">Ajout de la tache</p>
+                    <p class="alertText2">Added with success</p>
+                   </div>
+            </div>
+
+            <div class="alert-contenainer1">
+                <div class="alert1">
+                    <p class="alertText1">Modifie la tache</p>
+                    <p class="alertText2">update with success</p>
+                   </div>
+            </div>
+
+            
+
+           
+
+        
+ 
+    </div>
+    
+    <div id="descrition-alert">
+
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
