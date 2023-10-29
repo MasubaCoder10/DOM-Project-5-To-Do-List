@@ -185,22 +185,11 @@ function deleteData(index) {
   } else {
     arrayTask = JSON.parse(localStorage.getItem("arrayTask"));
   }
-
-
- 
   arrayTask.splice(index, 1);
   reArange(arrayTask);
-  /*
-    if(arrayTask[index].select2 === "Nouveau"){
-        countNoueau--;
-    }else if(arrayTask[index].select2 === "Cour"){
-        countCours--;
-    }else if(arrayTask[index].select2 === "Terminer"){
-        countTerminer--;
-    } */
-    descriptionTitre.innerText = ""
+  descriptionTitre.innerText = ""
   localStorage.setItem("arrayTask", JSON.stringify(arrayTask));
-
+  document.location.reload()
   showData();
 }
 

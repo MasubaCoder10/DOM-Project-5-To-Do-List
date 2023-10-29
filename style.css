@@ -3,20 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    display: flex;
-    justify-content: center;
-
-}
-.container{
-    height: 92vh;
+.container1{
     border: 1px solid hsl(176, 88%, 27%);
-    border-radius: 10px;
 }
 .border1{
-    height: 92vh;
+    
     border: 1px solid black;
     border-radius: 10px 0px 0px 10px;
+    
 }
 P.tittle1{
     background-color: hsl(176, 88%, 27%);
