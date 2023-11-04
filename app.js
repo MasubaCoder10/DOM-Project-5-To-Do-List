@@ -1,6 +1,6 @@
 const descriptionTitre = document.querySelector(".description");
-const alerts = document.querySelector(".alert-contenainer");
-const alerts1 = document.querySelector(".alert-contenainer1");
+const alert = document.querySelector(".alert");
+const alerts1 = document.querySelector(".alert1");
 const closeBtn = document.querySelectorAll(".tittle1");
 
 const reArange = (arr) => {
@@ -102,10 +102,10 @@ function addData() {
     const select2 = document.getElementById("select2").value;
     const description = document.getElementById("description").value;
 
-    alerts.classList.add("alert-contenainer-show");
+    alert.classList.add("alert-show");
 
     setTimeout(() => {
-      alerts.classList.remove("alert-contenainer-show");
+      alert.classList.remove("alert-show");
     }, 3000);
 
     var arrayTask;
@@ -237,10 +237,10 @@ function editData(index) {
       document.getElementById("select2").value = "";
       document.getElementById("description").value = "";
 
-      alerts1.classList.add("alert-contenainer-show1");
+      alerts1.classList.add("alert1-show");
 
       setTimeout(() => {
-        alerts.classList.remove("alert-contenainer-show1");
+        alerts.classList.remove("alert1-show");
       }, 3000);
 
      
